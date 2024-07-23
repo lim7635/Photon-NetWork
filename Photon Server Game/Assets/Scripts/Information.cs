@@ -7,13 +7,17 @@ public class Information : MonoBehaviourPunCallbacks
 {
     public TextMeshProUGUI textMeshProUGUI;
 
+    private string roomName;
+
     public void ConnectRoom()
     {
-        PhotonNetwork.JoinRoom(textMeshProUGUI.text);
+        PhotonNetwork.JoinRoom(roomName);
     }
 
     public void SetData(string name, int currentStaff, int maxStaff)
     {
+        roomName = name;
+
         textMeshProUGUI.fontSize = 50;
         textMeshProUGUI.color = Color.black;
         textMeshProUGUI.alignment = TextAlignmentOptions.Center;
