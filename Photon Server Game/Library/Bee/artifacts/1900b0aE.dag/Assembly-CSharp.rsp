@@ -388,6 +388,7 @@
 "Assets/Scripts/Character Function/Move.cs"
 "Assets/Scripts/Character Function/Rotate.cs"
 "Assets/Scripts/ConnectServer.cs"
+"Assets/Scripts/Managers/ChatManager.cs"
 "Assets/Scripts/Managers/GameManager.cs"
 "Assets/Scripts/Managers/PlayfabManager.cs"
 "Assets/Scripts/Managers/RoomManager.cs"

@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 720344903086821694}
   - component: {fileID: 9068077583028671219}
   - component: {fileID: 2729306132038564658}
+  - component: {fileID: 165889438954503841}
   m_Layer: 3
   m_Name: Character
   m_TagString: Untagged
@@ -170,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move: {fileID: 0}
   rotate: {fileID: 0}
+  mouse: {fileID: 0}
   temporaryCamera: {fileID: 5111980492141676991}
 --- !u!114 &9068077583028671219
 MonoBehaviour:
@@ -199,6 +201,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
   speed: 200
+--- !u!114 &165889438954503841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318897766131643661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 983d5a53c5bed3340a68235adcdb10c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1742137484810957901
 GameObject:
   m_ObjectHideFlags: 0
