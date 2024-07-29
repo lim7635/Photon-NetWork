@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasRoom: {fileID: 519550004}
   canvasLobby: {fileID: 864668167}
+  canvasPopup: {fileID: 0}
   server: {fileID: 483315817}
 --- !u!1 &113227413
 GameObject:

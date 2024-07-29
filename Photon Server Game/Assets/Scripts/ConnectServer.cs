@@ -19,6 +19,13 @@ public class ConnectServer : MonoBehaviourPunCallbacks
         {
             canvasLobby.gameObject.SetActive(false);
         }
+
+        PhotonNetwork.NickName = PlayerPrefs.GetString("Nickname");
+
+        if(PhotonNetwork.NickName == "")
+        {
+            Instantiate(Resources.Load<GameObject>("Nickname Popup"));
+        }
     }
 
     public void SelectServer()

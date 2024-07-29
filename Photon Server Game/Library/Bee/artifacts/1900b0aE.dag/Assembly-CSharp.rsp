@@ -387,6 +387,7 @@
 "Assets/Scripts/Character Function/Mouse.cs"
 "Assets/Scripts/Character Function/Move.cs"
 "Assets/Scripts/Character Function/Rotate.cs"
+"Assets/Scripts/Character Function/View.cs"
 "Assets/Scripts/ConnectServer.cs"
 "Assets/Scripts/Managers/ChatManager.cs"
 "Assets/Scripts/Managers/GameManager.cs"
@@ -395,6 +396,7 @@
 "Assets/Scripts/Managers/UnitManager.cs"
 "Assets/Scripts/UI/Alarm.cs"
 "Assets/Scripts/UI/Information.cs"
+"Assets/Scripts/UI/Name.cs"
 "Assets/Scripts/UI/Pause.cs"
 -langversion:9.0
 
