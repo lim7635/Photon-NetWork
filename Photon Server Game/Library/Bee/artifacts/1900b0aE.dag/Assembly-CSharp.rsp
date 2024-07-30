@@ -398,6 +398,7 @@
 "Assets/Scripts/UI/Information.cs"
 "Assets/Scripts/UI/Name.cs"
 "Assets/Scripts/UI/Pause.cs"
+"Assets/Scripts/Unit.cs"
 -langversion:9.0
 
 /deterministic

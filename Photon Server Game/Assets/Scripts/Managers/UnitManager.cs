@@ -8,6 +8,8 @@ public class UnitManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] float time = 5.0f;
 
+    [SerializeField] Transform [] warp;
+
     void Start()
     {
         if(PhotonNetwork.IsMasterClient)
@@ -22,7 +24,9 @@ public class UnitManager : MonoBehaviourPunCallbacks
 
         while(true)
         {
-            PhotonNetwork.InstantiateRoomObject("Unit", Vector3.zero, Quaternion.identity);
+            int random = Random.Range(0, warp.Length);
+
+            PhotonNetwork.InstantiateRoomObject("Unit", warp[random].position, Quaternion.identity);
 
             yield return waitForSeconds;
         }
