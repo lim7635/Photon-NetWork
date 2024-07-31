@@ -23,6 +23,8 @@ public class Unit : MonoBehaviour
     {
         state = State.RUN;
 
+        animator = GetComponent<Animator>();
+
         tower = GameObject.Find("Tower");
 
         transform.LookAt(tower.transform.position);
@@ -35,10 +37,10 @@ public class Unit : MonoBehaviour
             case State.RUN: Run();
                 break;
 
-            case State.ATTACK:
+            case State.ATTACK: Attack();
                 break;
 
-            case State.DIE:
+            case State.DIE: Die();
                 break;
         }
     }
@@ -48,12 +50,21 @@ public class Unit : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, tower.transform.position, speed * Time.deltaTime);
     }
 
+    public void Attack()
+    {
+        animator.SetTrigger("Attack");
+    }
+
+    public void Die()
+    {
+        animator.SetTrigger("Die");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Tower"))
         {
             state = State.ATTACK;
-            animator.Play("Attack");
         }
     }
 }

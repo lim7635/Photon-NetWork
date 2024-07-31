@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using Photon.Pun;
 
-
 public class View : MonoBehaviourPunCallbacks
 {
     [SerializeField] TMP_Text nickName;

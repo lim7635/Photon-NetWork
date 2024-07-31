@@ -179,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   speed: 5
+  animator: {fileID: 0}
   tower: {fileID: 0}
 --- !u!135 &2964103966437846387
 SphereCollider:
@@ -200,7 +201,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.35
-  m_Center: {x: 0, y: 0.5, z: 0.15}
+  m_Center: {x: 0, y: 1.85, z: 0.15}
 --- !u!54 &74988125254292192
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Mouse : MonoBehaviour
 {
+    [SerializeField] LayerMask layerMask;
+
+    [SerializeField] Ray ray;
 
     void Start()
     {
@@ -14,5 +17,13 @@ public class Mouse : MonoBehaviour
     {
         Cursor.visible = state;
         Cursor.lockState = mode;
+    }
+
+    public void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+
+        }
     }
 }
