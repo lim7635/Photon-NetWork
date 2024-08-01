@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Mouse : MonoBehaviour
 {
+    [SerializeField] Ray ray;
+
     [SerializeField] LayerMask layerMask;
 
-    [SerializeField] Ray ray;
+    [SerializeField] RaycastHit rayCastHit;
+
+    [SerializeField] Vector3 direction;
+
+    [SerializeField] Transform rayPosition;
 
     void Start()
     {
@@ -23,7 +29,21 @@ public class Mouse : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            direction = Camera.main.ScreenPointToRay(Input.mousePosition).direction;
 
+            ray = new Ray(rayPosition.position, direction);
+
+            if(Physics.Raycast(ray, out rayCastHit, Mathf.Infinity, layerMask))
+            {
+                Debug.Log("Collide");
+            }
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawRay(rayPosition.position, direction * 100);
     }
 }
