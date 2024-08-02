@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 public enum State
@@ -15,6 +16,8 @@ public class Unit : MonoBehaviour
 
     [SerializeField] float speed = 5.0f;
 
+    [SerializeField] float health;
+
     [SerializeField] Animator animator;
 
     [SerializeField] GameObject tower;
@@ -22,6 +25,8 @@ public class Unit : MonoBehaviour
     void Start()
     {
         state = State.RUN;
+
+        health = 100.0f;
 
         animator = GetComponent<Animator>();
 
@@ -57,7 +62,17 @@ public class Unit : MonoBehaviour
 
     public void Die()
     {
-        animator.SetTrigger("Die");
+        PhotonNetwork.Destroy(gameObject);
+    }
+
+    public void Damage(float damage)
+    {
+        health -= damage;
+
+        if(health <= 0)
+        {
+            state = State.DIE;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

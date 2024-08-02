@@ -235,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   speed: 5
+  health: 0
   animator: {fileID: 0}
   tower: {fileID: 0}
 --- !u!135 &2964103966437846387

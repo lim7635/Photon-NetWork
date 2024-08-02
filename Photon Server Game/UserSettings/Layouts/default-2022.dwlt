@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 51
+  controlID: 19
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -193,8 +193,8 @@ MonoBehaviour:
     y: 456
     width: 796
     height: 491
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 370
     height: 442
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -660,9 +660,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 45.7382, y: -18.545593, z: -9.548605}
+    m_Target: {x: 23.581089, y: -39.981308, z: 3.868703}
     speed: 2
-    m_Value: {x: 45.7382, y: -18.545593, z: -9.548605}
+    m_Value: {x: 23.581089, y: -39.981308, z: 3.868703}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -708,9 +708,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.14652501, y: -0.7288584, z: 0.16475312, w: -0.64820033}
+    m_Target: {x: -0.3731348, y: -0.58804077, z: 0.35034215, w: -0.6262991}
     speed: 2
-    m_Value: {x: -0.14652418, y: -0.72885424, z: 0.16475219, w: -0.64819664}
+    m_Value: {x: -0.37313262, y: -0.5880373, z: 0.3503401, w: -0.62629545}
   m_Size:
     m_Target: 36.956764
     speed: 2
@@ -965,21 +965,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8ad0feff8ee3feff663bffff6a5effff9861ffff7670ffffb679ffff3687ffffa49cffffd09cffffa2a9ffffcea9fffff8afffffb8b1ffff3af6ffff74b40000
+      m_ExpandedIDs: 8a85ffffd09bfffff0a7ffffd8baffff04e7ffff8aedffff8af2ffff7afaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Ray
-        m_OriginalName: Ray
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -53720
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 10}
       m_SearchString: 
@@ -1068,7 +1068,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1076,17 +1076,17 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/Resources
+  - Assets/Scenes
   m_LastFoldersGridSize: 62
   m_LastProjectPath: C:\Users\Administrator\Desktop\Photon-NetWork\Photon Server
     Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 68}
-    m_SelectedIDs: 50610000
-    m_LastClickedID: 24912
-    m_ExpandedIDs: 0000000006610000086100000a6100000c6100000e610000106100001261000014610000
+    scrollPos: {x: 0, y: 32}
+    m_SelectedIDs: 9c5f0000
+    m_LastClickedID: 24476
+    m_ExpandedIDs: 00000000505f0000525f0000545f0000565f0000585f00005a5f00005c5f00005e5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1114,7 +1114,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000006610000086100000a6100000c6100000e610000106100001261000014610000
+    m_ExpandedIDs: 00000000505f0000525f0000545f0000565f0000585f00005a5f00005c5f00005e5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

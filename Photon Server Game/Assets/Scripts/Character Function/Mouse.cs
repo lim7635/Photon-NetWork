@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class Mouse : MonoBehaviour
+public class Mouse : MonoBehaviourPunCallbacks
 {
     [SerializeField] Ray ray;
 
@@ -35,7 +36,12 @@ public class Mouse : MonoBehaviour
 
             if(Physics.Raycast(ray, out rayCastHit, Mathf.Infinity, layerMask))
             {
-                Debug.Log("Collide");
+                PhotonView photonObject = rayCastHit.collider.gameObject.GetComponent<PhotonView>();
+
+                if(photonObject.IsMine)
+                {
+                    photonObject.GetComponent<Unit>().Damage(50.0f);
+                }
             }
         }
     }
